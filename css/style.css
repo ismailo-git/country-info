@@ -7,3 +7,13 @@ body {
     min-height: 100vh;
     width: 100%;
 }
+
+.columns {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.columns .column {
+
+    flex: 1 1 20rem;
+}
