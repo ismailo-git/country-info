@@ -6,30 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Bulma CDN LINK-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <!--Custom CSS LINK-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header>
+        <h1>Trouvez les infos d'un pays</h1>
+        <input type="text" id="inputSearch" placeholder="Cherchez un pays en anglais">
     
-    <div class="container py-6">
-        <div class="columns">
-            <div class="column is-12 py-6">
-                <h3 class="title is-3 is-centered">Vous recherchez des informations sur un pays ? C'est ici</h3>
-                <form>
-                    <div class="field">
-                        <label class="label">Recherchez un pays</label>
-                    <div class="control">
-                        <input class="input" type="text" placeholder="Saisir le nom d'un pays" id="inputSearch">
-                    </div>
-                    </div>
-                </form>
-            </div>
+    </header>
+    <section>
+        <div class="box-container" id="box-container">
+            
         </div>
-        <div class="columns" id="content">
-          
-        </div>
-    </div>
+    </section>
 
     <script src="js/main.js"></script>
 </body>

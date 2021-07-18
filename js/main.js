@@ -7,26 +7,19 @@ function getCountries(e) {
     .then((res) => res.json())
     .then((data) => {
         let output = '';
-        data.forEach(function(user){
+        data.forEach(function(country){
 
-            output += `<div class="column is-half">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image">
-                                    <img src="${user.flag}"/>
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <h3>Pays : ${user.name}</h3>
-                                <h3>Population : ${user.population}</h3>
-                                <h3>Capitale : ${user.capital}</h3>
-                                <h3>Continent : ${user.region}</h3>
-                                <h3>Langue : ${user.languages}</h3>
-                            </div>
+            output += `<div class="box">
+                        <img src="${country.flag}" />
+                        <div class="content">
+                            <p><span>Pays:</span> ${country.name}</p>
+                            <p><span>Capitale :</span> ${country.capital}</p>
+                            <p><span>Population :</span> ${country.population}</p>
+                            <p><span>Continent :</span> ${country.region}</p>
                         </div>
-            </div>`;
+                        </div>`;
 
         });
-        document.querySelector('#content').innerHTML = output;
+        document.querySelector('#box-container').innerHTML = output;
     })
 }
